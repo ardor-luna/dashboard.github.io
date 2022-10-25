@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+      
+     <title>Dashboard</title>
+</head>
+<body>
+
+    <!-- header starts here  -->
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__nav-menu">
+                <div class="toggle__btn" id="nav-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                      </svg>
+                </div>
+                
+                <div class="nav-menu">
+                     <form action="" class="menu-calender">
+                         <input type="date" name="date" id="menu-calender" class="calender">
+                     </form>
+                     <div class="vertical-line"></div>
+                     <div class="menu-bell">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                          </svg>
+                     </div>
+                     <div class="vertical-line"></div>
+                     <div class="menu-user">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                    </div>
+                     <div class="arrow__down" id="arrow-down">
+                         <svg class="arrow__down-icon" viewBox="0 0 14.1 11.75" >
+                             <path id="arrow-down" d="M 5.721115112304688 11.31624698638916 C 5.65296459197998 11.24985885620117 5.361563205718994 10.99918174743652 5.121860980987549 10.76566028594971 C 3.614325284957886 9.396635055541992 1.14680802822113 5.825244903564453 0.393627792596817 3.955994367599487 C 0.2726019024848938 3.672112226486206 0.01645011641085148 2.954405307769775 0 2.57094144821167 C 0 2.203493118286133 0.08460058271884918 1.853223085403442 0.2561517953872681 1.518980145454407 C 0.495853453874588 1.102321147918701 0.8730310797691345 0.7680770754814148 1.31835925579071 0.5849285125732422 C 1.627386331558228 0.4670269787311554 2.552118062973022 0.2838796675205231 2.568568229675293 0.2838796675205231 C 3.580250263214111 0.1007313430309296 5.224086761474609 0 7.040649890899658 0 C 8.77143669128418 0 10.34829807281494 0.1007313430309296 11.37525463104248 0.2506833076477051 C 11.39170551300049 0.267853707075119 12.54086399078369 0.4510022401809692 12.93449115753174 0.6513199210166931 C 13.65359687805176 1.018760323524475 14.10009765625 1.7364741563797 14.10009765625 2.504541873931885 L 14.10009765625 2.57094144821167 C 14.08247375488281 3.071166038513184 13.63597011566162 4.123116016387939 13.61952018737793 4.123116016387939 C 12.86516571044922 5.89164400100708 10.51867389678955 9.380607604980469 8.959437370300293 10.78282737731934 C 8.959437370300293 10.78282737731934 8.558759689331055 11.17774772644043 8.308484077453613 11.34945201873779 C 7.948930740356445 11.61729335784912 7.503602981567383 11.75008296966553 7.058274269104004 11.75008296966553 C 6.561246395111084 11.75008296966553 6.098292827606201 11.60012817382813 5.721115112304688 11.31624698638916">
+                             </path>
+                         </svg> 
+                     </div> 
+                     <div class="overlay">
+                        <form>
+                           <div class="con">
+                           <!--     Start  header Content  -->
+                           <header class="head-form">
+                              <h2>Log In</h2>
+                              <p>login here using your username and password</p>
+                           </header>
+                           <!--     End  header Content  -->
+                           <br>
+                           <div class="field-set">
+                             
+                              <!--   user name -->
+                                 <span class="input-item">
+                                   <i class="fa fa-user-circle"></i>
+                                 </span>
+                                <!--   user name Input-->
+                                 <input class="form-input" id="txt-input" type="text" placeholder="@UserName" required>
+                             
+                              <br>
+                             
+                                   <!--   Password -->
+                             
+                              <span class="input-item">
+                                <i class="fa fa-key"></i>
+                               </span>
+                              <!--   Password Input-->
+                              <input class="form-input" type="password" placeholder="Password" id="pwd"  name="password" required>
+                             
+                        <!--      Show/hide password  -->
+                             <span>
+                                <i class="fa fa-eye" aria-hidden="true"  type="button" id="eye"></i>
+                             </span>
+                             
+                             
+                              <br>
+                        <!--        buttons -->
+                        <!--      button LogIn -->
+                              <button class="log-in"> Log In </button>
+                           </div>
+                          
+                        <!--   other buttons -->
+                           <div class="other">
+                        <!--      Forgot Password button-->
+                              <button class="btn submits frgt-pass">Forgot Password</button>
+                        <!--     Sign Up button -->
+                              <button class="btn submits sign-up">Sign Up 
+                        <!--         Sign Up font icon -->
+                              <i class="fa fa-user-plus" aria-hidden="true"></i>
+                              </button>
+                        <!--      End Other the Division -->
+                           </div>
+                             
+                        <!--   End Container  -->
+                          </div>
+                          
+                          <!-- End Form -->
+                        </form>
+                        </div>
+                </div>                                       
+                
+            </div>
+        </nav>
+        <div class="header__title" id="header-title">
+            <span class="dashboard__title">Dashboard</span>
+        </div>
+        <div class="dashboard__area" id="dashboard-area">
+            <span class="welcom__message"> welcome back ,</span><span></span>
+        </div>
+    </header>
+
+
+
+    <!-- main area starts here -->
+
+    <main class="main__area" id="main-area">
+        <div class="main__area-card">
+            <div class="main__icon doctor-bg">
+               <img class="card-icon doctor-icon"  src="/svg/stethoscope.svg" alt="" style="color:hsl(356, 100%, 63%);">
+            </div>
+           
+            <h2 class="card-title doctor-title">Doctors</h2>
+            <span class="card-statistic">+25</span>
+        </div>
+        <div class="main__area-card">
+            <div class="main__icon donor-bg">
+                <img class="card-icon donor-icon" src="/svg/Iconly-Light-Outline-3-Donor.svg" alt="" style="color:hsl(236, 100%, 63%);">
+            </div>  
+            <h2 class="card-title donor-title">Donors</h2>
+            <span class="card-statistic">+19</span>
+        </div>
+        <div class="main__area-card">
+            <div class="main__icon reciever-bg">
+                <img class="card-icon reciever-icon" src="/svg/Iconly-Light-Outline-2-Receiver.svg" alt="">
+            </div>
+            <h2 class="card-title reciever-title">Receivers</h2>
+            <span class="card-statistic">+32</span>
+        </div>
+        <div class="main__area-card">
+            <div class="main__icon appoitement-bg">
+                <img class="card-icon appoitement-icon" src="/svg/Iconly-Light-Outline-appointement.svg" alt="" style="color: hsl(187, 76%, 41%);">
+            </div>
+            
+            <h2 class="card-title appoitement-title">Appoitement</h2>
+            <span class="card-statistic">+09</span>
+        </div>
+        <div class="main__area-card">
+            <div class="main__icon request-bg ">
+               <img class="card-icon request-icon" src="/svg/Iconly-Light-Outline-requests.svg" alt="" style="color: hsl(116, 81%, 45%);">
+            </div>
+           
+            <h2 class="card-title request-title">Requests</h2>
+            <span class="card-statistic">+78</span>
+        </div>
+    </main>
+
+    <!-- new section contains the title of the table -->
+    <section class="list__requests">
+        <p class="list__request-title"  id="list-requests">Recent Requests :</p>
+    </section>
+
+    <!-- section table of requests -->
+    <section class="requests__area" id="request-area">
+        <div class="requests__area-grid">
+            <div class="grid grid-number">
+                <h2 class="table__title">NO</h2>
+                <ul class="table__content">
+                    <li class="table__cell">01</li>
+                    <li class="table__cell">02</li>
+                    <li class="table__cell">03</li>
+                    <li class="table__cell">04</li>
+                    <li class="table__cell">05</li>
+                </ul>
+            </div>
+            <div class="grid grid-fname">
+                <h2 class="table__title">First Name</h2>
+                <div class="table__title-line"></div>
+                <ul class="table__content">
+                    <li class="table__cell">Raja</li>
+                    <li class="table__cell">Ossama</li>
+                    <li class="table__cell">Mouataz</li>
+                    <li class="table__cell">Rym</li>
+                    <li class="table__cell">Chorouk</li>
+                </ul>
+            </div>
+            <div class="grid grid-lname">
+                <h2 class="table__title">Last Name</h2>
+                <div class="table__title-line"></div>
+                <ul class="table__content">
+                    <li class="table__cell">Kdf</li>
+                    <li class="table__cell">Mslb</li>
+                    <li class="table__cell">Klaa</li>
+                    <li class="table__cell">Gdj</li>
+                    <li class="table__cell">zdlms</li>
+                </ul>
+            </div>
+            <div class="grid grid-type">
+                <h2 class="table__title">Type</h2>
+                <div class="table__title-line"></div>
+                <ul class="table__content">
+                    <li class="table__cell">Reciever</li>
+                    <li class="table__cell">Reciever</li>
+                    <li class="table__cell">Reciever</li>
+                    <li class="table__cell">Donor</li>
+                    <li class="table__cell">Donor</li>
+                </ul>
+            </div>
+            <div class="grid grid-btype">
+                <h2 class="table__title">Blood Type</h2>
+                <div class="table__title-line"></div>
+                <ul class="table__content">
+                    <li class="table__cell">O+</li>
+                    <li class="table__cell">AB-</li>
+                    <li class="table__cell">O-</li>
+                    <li class="table__cell">A+</li>
+                    <li class="table__cell">B+</li>
+                </ul>
+            </div>
+            <div class="grid grid-status">
+                <h2 class="table__title">Status</h2>
+                <div class="table__title-line"></div>
+                <ul class="table__content">
+                    <li class="table__cell pending">Pending</li>
+                    <li class="table__cell completed">Completed</li>
+                    <li class="table__cell completed">Completed</li>
+                    <li class="table__cell pending">Pending</li>
+                    <li class="table__cell disapproved">Disapproved</li>
+                </ul>
+            </div>
+            <div class="grid grid-action">      
+                <h2 class="table__title">Action</h2>
+                <div class="table__title-line"></div>
+                <a href="#" class="table__cell link-view">View More</a>
+                <a href="#" class="table__cell link-view">View More</a>
+                <a href="#" class="table__cell link-view">View More</a>
+                <a href="#" class="table__cell link-view">View More</a>
+                <a href="#" class="table__cell link-view">View More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- aside menu starts here -->
+   
+    <section class="aside__menu" id="aside-menu">
+        <div class="dashboard__icon"> 
+                 <!--the blood bank icon goes here  -->
+        </div>
+        <div class="user__identity">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 user__identity-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            <h3 class="user__identity-name">Cornila Velfrido</h3>
+            <p class="user__identity-status">Admin</p>
+        </div>
+        <div class="aside__bar">
+            <div class="home-area aside">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 dashboard__aside-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                  </svg>
+                <p class="aside__bar-title">Home</p>
+            </div>
+            <div class="dash-area aside">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 dashboard__aside-icon" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                  </svg>
+                <p class="aside__bar-title">Dashboard</p>
+            </div>
+            <div class="appointement-area aside">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 dashboard__aside-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                <p class="aside__bar-title">Appoitement</p>
+            </div>
+            <div class="subscribers-area aside">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 dashboard__aside-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
+                  </svg>
+                <p class="aside__bar-title" id="aside-title">Subscribers</p>
+            </div>
+            <div class="aside">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 dashboard__aside-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
+                  </svg>
+                <p class="aside__bar-title">Request</p>
+            </div>
+            <div class="profile-area aside">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 dashboard__aside-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                  </svg>
+                <p class="aside__bar-title">Profile</p>
+            </div>
+        </div>
+    
+    <div class="logout-area">
+         <img src="/svg/signout.svg" alt="logout icon" class="logout-icon">
+         <p class="logout-title">Logout</p>
+    </div>
+    <div class="show__menu-btn" id="nav-close">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 show__menu-btn--icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+    </div>
+    </section>
+  <script src="main.js"></script>
+</body>
+</html>
